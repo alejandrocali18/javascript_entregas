@@ -21,7 +21,7 @@ switch (){
 /*ciclo for*/
 
 for (let i = 0; i <= 5; i++) {
-    console.log(`Me salio y no rompi nada I es: ${i}`);
+    alert(`Me salio y no rompi nada I es: ${i}`);
 }
 
 /*Condicional*/
