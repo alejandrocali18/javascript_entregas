@@ -13,7 +13,7 @@ alert(
 if (calificacion >= 7) {
     alert("felicidades pasaste")
 } else {
-    alert("desaprobaste")
+    alert("desaprobaste vuelva a intentarlo")
 }
 
 for (let i = 7; i <= 10; i++) {
