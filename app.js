@@ -1,38 +1,21 @@
-/*
-let food= prompt("")
+let apellido;
+let nombre; 
+let calificacion;
+let i;
 
-switch (){
-    case "":
-    console.log("")
-    break;
-    case "":
-        console.log("")
-        break;
-        case "":
-            console.log("")
-            break;
-            default:
-                console.log("")
-                break;
-}
-*/
+apellido = prompt("escriba su apellido")
+nombres = prompt("escriba su nombre")
+calificacion = parseInt(prompt("escribe tu calificacion"))
 
+alert(
+    "el promedio de: " + " " + nombres + " " + apellido + " " + " es de: " + calificacion)
 
-/*ciclo for*/
-
-for (let i = 0; i <= 5; i++) {
-    alert(`Me salio y no rompi nada I es: ${i}`);
-}
-
-/*Condicional*/
-
-let efectivo = 4000
-let tarjeta = 6000
-let pagar = 11000
-let disponible = efectivo + tarjeta;
-
-if (efectivo > pagar || tarjeta > pagar || disponible >= pagar) {
-    console.log("podemos hacer la compra");
+if (calificacion >= 7) {
+    alert("felicidades pasaste")
 } else {
-    console.log("gracias vuelva pronto")
+    alert("desaprobaste")
+}
+
+for (let i = 7; i <= 10; i++) {
+    alert(`se aprueba si tu calificacion es de: ${i}`)
 }
