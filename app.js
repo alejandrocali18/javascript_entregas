@@ -13,6 +13,7 @@ let carrito;
 let venta;
 let despido;
 let inicioCompra;
+let frutas;
 
 function bienVenido(){
     let nombre = prompt("ingrese su nombre");
@@ -22,7 +23,9 @@ function bienVenido(){
 }
 bienVenido();
 
+
 /*              OBJECT CONSTRUCTOR                                                     */ 
+
 function Mercaderia(nombre, precio, kilos){
     this.nombre = nombre;
     this.precio = precio;
@@ -40,3 +43,12 @@ console.log(mercaderiaTres);
 console.log(mercaderiaCuatro);
 console.log(mercaderiaCinco);
 /*              FIN CONSTRUTOR                           */
+
+
+/*    ARRAY     */
+
+let bolsa = ["banana", "naranja", "manzana", "uva", "choclo"]
+
+bolsa[2] = "manzana";
+
+/*   FIN ARRAY       */
