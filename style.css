@@ -2,3 +2,11 @@
     margin: 0;
     padding: 0;
 }
+main{
+    text-align: center;
+}
+
+img{
+    height: 600px;
+    width: 400px;
+}
