@@ -101,6 +101,9 @@ console.log(mercaderiaCinco);
 /*              FIN CONSTRUTOR                           */
 
 
-/*            NOTA MENTAL = VOS PODES NO TE RINDAS POR MAS PROBLEMAS SIEMPRE TENDRA ALGUN RESULTADO POSITIVO O NEGATIVO SOLO BUSCA LA SOLUCION
-
+/*            
+se que me hace falta todo 
+tube complicaciones estos dias
+pero se lo voy a tener todo para el 5 de la 
+disculpe 
 */
