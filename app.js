@@ -1,39 +1,52 @@
-/*    ARRAY     */
-const mercaderia =[
-    {nombre: "naranja", precio:50, kilos: 1, img : './frutas/naranja.jpg'},
-    {nombre: "mandarina", precio:70, kilos: 1, img : './frutas/mandarina.jpg'},
-    {nombre: "uva", precio:100, kilos: 1, img : './frutas/uva.webp'},
-    {nombre: "pera", precio:80, kilos: 1, img : './frutas/pera.jpg'},
-    {nombre: "coco", precio:130, kilos: 1, img : './frutas/coco.jpg'},
-]
+const container = document.getElementById("container");
+const verCarrito = document.getElementById("carrito");
+let carrito=[];
 
-const contenedorProductos = document.getElementById(`contenedorProducto`)
+productos.forEach((product)=>{
+    let content=document.createElement("div");
+    content.className = "card";
+    content.innerHTML = `
+    <img src="${product.img}">
+    <h2>${product.nombre}</h2>
+    <p class="precio">${product.precio} $</p>
+    <p>${product.kilo} kilo</p>
+    `;
 
+    container.append(content);
 
-let bolsa = []
+    let comprar = document.createElement("button")
+    comprar.innerText = "comprar";
+    comprar.className = "comprar";
 
-mercaderia.forEach((producto) =>{
-    const div = document.createElement(`div`)
-    div.classList.add('producto')
-    div.innerHTML = `
-    <img src= ${ producto . img } alt= "">
-    <h3>${producto.nombre}</h3>
-    <p>kilos: ${producto.kilos}</p>
-    <p class="precioProducto">Precio:$ ${producto.precio}</p>
-    <button id="agregar${producto.nombre}" class="boton-agregar">Agregar</button>
-    `
-    contenedorProductos.appendChild(div)
+    content.append(comprar);
 
-    const boton = document.getElementById(`agregar${producto.nombre}`)
-   
-    boton.addEventListener(`click`, () => {
-        agregarAbolsa(producto.nombre)
+    comprar.addEventListener("click",() =>{
+        carrito.push({
+            img: product.img,
+            nombre : product.nombre,
+            precio : product.precio,
+            kilo : product.kilo
+        })
+        console.log(carrito)
     })
 })
+verCarrito.addEventListener("click", () =>{
+    console.log("anda")
+})
 
-const agregarAbolsa = (producNombre) =>{
-    const item = mercaderia.find((produc) => produc.nombre === producNombre)
-    bolsa.push(item)
-    console.log("bolsa")
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
