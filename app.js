@@ -67,9 +67,9 @@ verCarrito.addEventListener("click", () =>{
     modalContainer.append(totalbuying);
 });
 
+localStorage.setItem("carrito", JSON.stringify(carrito));
 
-
-
+/*        creon que hice mal y me equivoque tendria que poner devuelta las funciones                        */ 
 
 
 
